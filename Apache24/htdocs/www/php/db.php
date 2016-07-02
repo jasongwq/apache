@@ -1,6 +1,6 @@
 <?php
 //使用sqlite
-$PHPROOT='D:/db';
+$PHPROOT='D:/';
 $dbserver='sqlite:'.$PHPROOT.'/editormd.db';
 $dbuser='editormd';
 $dbmima='admin';
@@ -8,6 +8,16 @@ $dbmima='admin';
 // $dbserver='mysql:host=localhost;dbname=zjwdb_547072';
 // $dbuser='zjwdb_547072';
 // $dbmima='NnN123456';
+
+//判断数据表是否存在 不存在则创建
+$db = new PDO($dbserver, $dbuser, $dbmima);
+$sth = $db->exec("
+CREATE TABLE if not EXISTS document (
+  name text KEY NOT NULL,
+  time INT  NOT NULL,
+  text text NOT NULL,
+  auther text NOT NULL
+);");
 
 //如果没有数据返回false
 //时间数据格式2016-05-20 00:00:00
