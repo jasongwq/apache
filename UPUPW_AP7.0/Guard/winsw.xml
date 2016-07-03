@@ -3,10 +3,10 @@
 <id>UPUPW_updaemon_A</id>
 <name>UPUPW_updaemon_A</name>
 <description>用于支持Apache守护进程随服务启动</description>
-<executable>X:/UPUPW_P7/upcore/updaemon.exe</executable>
-<logpath>X:/UPUPW_P7/Guard/</logpath>
+<executable>d:/Desktop/apache/apache/UPUPW_AP7.0/upcore/updaemon.exe</executable>
+<logpath>d:/Desktop/apache/apache/UPUPW_AP7.0/Guard/</logpath>
 <logmode>roll</logmode>
 <depend></depend>
-<startargument>-p X:/UPUPW_P7/upcore/updaemon.exe</startargument>
+<startargument>-p d:/Desktop/apache/apache/UPUPW_AP7.0/upcore/updaemon.exe</startargument>
 <stopargument></stopargument>
 </service>
