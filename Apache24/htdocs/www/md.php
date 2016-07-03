@@ -6,7 +6,7 @@
     </head>
     <body>
         <nav class="site-navigation">
-        <div class="build-date"><a href="javascript:;">BOOK</a></div>
+        <div class="build-date"><a href="javascript:;">BOOK</a><a href="./mv.php">MV</a></div> 
         <br>
         <input type="text" id="newBook" onkeypress="if(event.keyCode==13) {btn.click();return false;}"/>
         <input type="submit" id="btn" value="New" onclick="window.location='./md_edit.php?mdname='+newBook.value;return false;" />

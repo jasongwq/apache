@@ -2,6 +2,7 @@
 require_once './db.php';
 
 function get_allfiles($path,&$files) {  
+    //error_log($path);
     if(is_dir($path)){  
         $dp = dir($path);  
         while ($file = $dp ->read()){  
